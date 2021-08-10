@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HW17 - Заказ суши</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Заполните все поля для заказа суши</h2>
+
+    <form>
+        <ul>
+            <li><label>
+                    <span>Имя</span>
+                    <input type="text"></label>
+            </li>
+            <li><label>
+                    <span>Адрес</span>
+                    <input type="text"></label>
+            </li>
+            <li><label>
+                    <span>Телефон</span>
+                    <input type="text"></label>
+            </li>
+            <li><label>
+                    <span>E-mail</span>
+                    <input type="email"></label>
+            </li>
+
+            <li>
+                <label for="need-sticks"><span>Добавить палочки</span></label>
+                <input type="checkbox" id="need-sticks" class="adds">
+                <fieldset class="stick-types">
+                    <legend>Тип палочек</legend>
+                    <input type="radio" id="st-type1" name="st-type" checked />
+                    <label for="st-type1">Стандартные</label>
+                    <input type="radio" id="st-type2" name="st-type" />
+                    <label for="st-type2">Учебные</label>
+                    <label>
+                        <span>Количество</span>
+                        <input type="number" name="sticks-amount" id="stks-amount" min="1" max="100" step="1">
+                    </label>
+                </fieldset>
+            </li>
+            <li>
+                <label for="need-napkins"><span>Добавить салфетки</span></label>
+                <input type="checkbox" id="need-napkins" class="adds">
+            </li>
+            <li>
+                <label for="sets"><span>Выбрать сеты >>></span></label>
+                <input type="checkbox" id="sets">
+                <fieldset class="sets-list">
+                    <legend>Укажите количество сетов для заказа</legend>
+
+                    <div class="set-card">
+                        <h5>Сяки-Маки</h5>
+                        <img src="https://cdn.icon-icons.com/icons2/1447/PNG/64/32408sushi_98892.png" alt="">
+                        <input type="number" name="card1" id="card1" min="0" max="100" step="1">
+                    </div>
+
+                    <div class="set-card">
+                        <h5>Буки-Бяки</h5>
+                        <img src="https://cdn.icon-icons.com/icons2/1447/PNG/64/32408sushi_98892.png" alt="">
+                        <input type="number" name="card2" id="card2" min="0" max="100" step="1">
+                    </div>
+
+                    <div class="set-card">
+                        <h5>Уши-Макаки</h5>
+                        <img src="https://cdn.icon-icons.com/icons2/1447/PNG/64/32408sushi_98892.png" alt="">
+                        <input type="number" name="card3" id="card3" min="0" max="100" step="1">
+                    </div>
+
+                    <div class="set-card">
+                        <h5>Мотик-Кавасаки</h5>
+                        <img src="https://cdn.icon-icons.com/icons2/1447/PNG/64/32408sushi_98892.png" alt="">
+                        <input type="number" name="card4" id="card4" min="0" max="100" step="1">
+                    </div>
+
+                    <div class="set-card">
+                        <h5>Плыли-Каяки</h5>
+                        <img src="https://cdn.icon-icons.com/icons2/1447/PNG/64/32408sushi_98892.png" alt="">
+                        <input type="number" name="card5" id="card5" min="0" max="100" step="1">
+                    </div>
+
+                    <div class="set-card">
+                        <h5>Ролл с огурцом</h5>
+                        <img src="https://cdn.icon-icons.com/icons2/1447/PNG/64/32365cucumber_98872.png" alt="">
+                        <input type="number" name="card6" id="card6" min="0" max="100" step="1">
+
+                </fieldset>
+            </li>
+
+            <li><label>
+                    <span>Дополнительный комментарий</span>
+                    <textarea name="comment" id="" cols="30" rows="3"></textarea>
+                </label>
+            </li>
+            <li>
+                <button>Отправить заказ</button>
+            </li>
+        </ul>
+
+    </form>
+</body>
+
+</html>
